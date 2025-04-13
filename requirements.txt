@@ -22,7 +22,7 @@ opencv-python==4.8.1.78
 packaging==24.0
 pandas==2.2.2
 pillow==10.3.0
-protobuf==5.25.2
+protobuf==4.25.6
 pyarrow==15.0.2
 pydeck==0.8.1b0
 python-dateutil==2.9.0.post0
