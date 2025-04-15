@@ -1,7 +1,13 @@
 from flask import Flask, request, jsonify
+from flask import send_from_directory
 import util
+import os
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='../client', static_url_path='')
+
+@app.route('/')
+def index():
+    return send_from_directory(app.static_folder, 'app.html')
 
 @app.route('/classify_image', methods=['GET','POST'])
 
