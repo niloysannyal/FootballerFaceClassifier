@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: footballer-face-classifier
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: python server/server.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12
