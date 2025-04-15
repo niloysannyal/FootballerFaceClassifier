@@ -40,13 +40,13 @@ def load_saved_artifacts():
     global __class_name_to_number
     global __class_number_to_name
 
-    with open("./artifacts/class_dictionary.json", "r") as f:
+    with open("/artifacts/class_dictionary.json", "r") as f:
         __class_name_to_number = json.load(f)
         __class_number_to_name = {v:k for k,v in __class_name_to_number.items()}
 
     global __model
     if __model is None:
-        with open('./artifacts/lr_model.pkl', 'rb') as f:
+        with open('/artifacts/lr_model.pkl', 'rb') as f:
             __model = joblib.load(f)
     print("loading saved artifacts...done")
 
@@ -84,17 +84,3 @@ def get_b64_test_image_for_ronaldo():
 
 if __name__ == '__main__':
     load_saved_artifacts()
-
-    #print(classify_image(get_b64_test_image_for_ronaldo(), None))
-    # print(classify_image(None, "./test_images/A.jpg"))
-    # print(classify_image(None, "./test_images/B.jpg"))
-    # print(classify_image(None, "./test_images/D.jpg"))
-    # print(classify_image(None, "./test_images/E.jpg"))
-    # print(classify_image(None,"./test_images/Messi1.jpg"))
-    # print(classify_image(None, "./test_images/Neymar3.jpg"))
-    # print(classify_image(None, "./test_images/Neymar2.jpg"))
-    # print(classify_image(None, "./test_images/Ramos1.jpg"))
-    # print(classify_image(None, "./test_images/Ramos2.jpg"))
-    # print(classify_image(None, "./test_images/Ronaldo2.jpg"))
-    # print(classify_image(None,"./test_images/Zlatan1.jpg"))
-    # print(classify_image(None, "./test_images/Zlatan2.jpg"))
