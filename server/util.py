@@ -1,3 +1,4 @@
+import os
 import joblib
 import json
 import numpy as np
@@ -11,6 +12,9 @@ __class_number_to_name = {}
 __model = None
 
 def classify_image(image_base64_data, file_path=None):
+    global __model
+    if __model is None:
+        load_saved_artifacts()
 
     imgs = get_cropped_image_if_2_eyes(file_path, image_base64_data)
 
@@ -39,14 +43,17 @@ def load_saved_artifacts():
     print("loading saved artifacts...start")
     global __class_name_to_number
     global __class_number_to_name
-
-    with open("/artifacts/class_dictionary.json", "r") as f:
-        __class_name_to_number = json.load(f)
-        __class_number_to_name = {v:k for k,v in __class_name_to_number.items()}
-
     global __model
+
+    base_path = os.path.dirname(__file__)
+    artifacts_path = os.path.join(base_path, 'artifacts')
+
+    with open(os.path.join(artifacts_path, "class_dictionary.json"), "r") as f:
+        __class_name_to_number = json.load(f)
+        __class_number_to_name = {v: k for k, v in __class_name_to_number.items()}
+
     if __model is None:
-        with open('/artifacts/lr_model.pkl', 'rb') as f:
+        with open(os.path.join(artifacts_path, 'lr_model.pkl'), 'rb') as f:
             __model = joblib.load(f)
     print("loading saved artifacts...done")
 
