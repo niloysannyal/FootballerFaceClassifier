@@ -1,3 +1,8 @@
+## 🔗 Live Demo
+
+[Click here to try the Footballer Face Recognition App](https://footballerimageclassifier.onrender.com/)
+
+
 ![Screenshot (167)](https://github.com/user-attachments/assets/61898a64-19fe-4d15-9e9a-6a19db45ee3d)
 In this data science and machine learning project, we classify wellknown footballers for availability of image data. We restrict classification to only 10 footballers:
 
