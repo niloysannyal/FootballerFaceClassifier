@@ -1,10 +1,4 @@
-## 🔗 Live Demo
-
-[Click here to try the Footballer Face Recognition App](https://footballerimageclassifier.onrender.com/)
-
 [![Live](https://img.shields.io/badge/LIVE-VISIT%20NOW-red?style=for-the-badge&logo=firefox)](https://footballerimageclassifier.onrender.com/)
-
-[![Live Demo](https://img.shields.io/badge/Live-Demo-blue.svg?style=for-the-badge)](https://footballerimageclassifier.onrender.com/)
 
 
 ![Screenshot (167)](https://github.com/user-attachments/assets/61898a64-19fe-4d15-9e9a-6a19db45ee3d)
