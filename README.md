@@ -2,7 +2,7 @@
 
 [Click here to try the Footballer Face Recognition App](https://footballerimageclassifier.onrender.com/)
 
-**Live Project:** [footballerimageclassifier.onrender.com](https://footballerimageclassifier.onrender.com/)
+[![Live](https://img.shields.io/badge/LIVE-VISIT%20NOW-red?style=for-the-badge&logo=firefox)](https://footballerimageclassifier.onrender.com/)
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-blue.svg?style=for-the-badge)](https://footballerimageclassifier.onrender.com/)
 
